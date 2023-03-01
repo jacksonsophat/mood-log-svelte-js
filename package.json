@@ -1,0 +1,28 @@
+{
+	"name": "mood-log-sveltekit-js",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@iconify/svelte": "^3.1.0",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"autoprefixer": "^10.4.13",
+		"node-sass": "^8.0.0",
+		"postcss": "^8.4.21",
+		"sass": "^1.58.3",
+		"svelte": "^3.54.0",
+		"svelte-preprocess": "^5.0.1",
+		"tailwindcss": "^3.2.7",
+		"vite": "^4.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"pocketbase": "^0.12.0",
+		"zod": "^3.20.6"
+	}
+}

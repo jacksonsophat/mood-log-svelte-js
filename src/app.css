@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #047857;
+    --secondary: #efefef;
+    --dark: #27272a;
+    --nude: #fffbf6;
+    --happy: #fefce8;
+    --happyDark: #fef08a;
+    --sad: #eff6ff;
+    --sadDark: #bfdbfe;
+    --fearful: #fff7ed;
+    --fearfulDark: #fed7aa;
+    --disgusted: #f0fdf4;
+    --disgustedDark: #bbf7d0;
+    --angry: #faf5ff;
+    --angryDark: #e9d5ff;
+    --surprised: #fdf2f8;
+    --surprisedDark: #fbcfe8;
+    --positive: #fef2f2;
+    --positiveDark: #fecdd3;
+    --neutral: #fafafa;
+    --neutralDark: #e4e4e7;
+    --negative: #f3f4f6;
+    --negativeDark: #e5e7eb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+
+small {
+    font-size: 12px;
+}
+
+body {
+    background-color: #fffbf6;
+    color: #27272a;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+}
+
+small {
+    font-size: 12px;
+}
+
+.center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    font-weight: 600;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    border: 2px solid var(--primary);
+}
+
+.btn-dark {
+    font-weight: 600;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--dark);
+    border-radius: 0.25rem;
+    border: 2px solid var(--dark);
+}
+
+.btn-primary-small {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    border: 2px solid var(--primary);
+}
+
+.btn-primary-outline {
+    font-weight: 600;
+    color: var(--primary);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.25rem;
+}
+
+input::file-selector-button {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    border-radius: 0.25rem;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #9ca3af;
+    background-color: #9ca3af;
+    color: #6b7280;
+}
