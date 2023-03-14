@@ -15,6 +15,7 @@
 
 <main class="grid grid-cols-12 gap-4 container pt-4">
   <Header
+    username={data?.user?.username ? data.user.username : ""}
     src={data?.user?.avatar
       ? getImageURL(data.user.collectionId, data.user?.id, data.user?.avatar)
       : "/images/anonymous-profile.png"}
@@ -25,8 +26,8 @@
         <slot />
       </div>
       <!-- Announcement -->
-      <div class="col-span-4 bg-pink-400 hidden md:block">
-        <p>Announcement</p>
+      <div class="col-span-4 hidden md:block">
+        <!-- <p>Announcement</p> -->
       </div>
     </div>
   </div>

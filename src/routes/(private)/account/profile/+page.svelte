@@ -1,5 +1,10 @@
 <script>
   import Icon from "@iconify/svelte";
+
+  export let data;
+  console.log(data);
+  console.log(data.posts);
+  // console.log(posts);
 </script>
 
 <section id="ProfilePage">
@@ -39,5 +44,17 @@
     <div class="text-center bg-secondary text-dark py-2 rounded font-semibold">
       <p>Anonymous Posts</p>
     </div>
+  </div>
+  <div id="UserPosts">
+    {#if data.posts.length === 0}
+      <div class="text-center">
+        <p>You don't have any posts.</p>
+        <a href="/posts/create-post" class="btn-primary-small">Log a mood!</a>
+      </div>
+    {:else}
+      {#each data.posts as post}
+        <p>Posts</p>
+      {/each}
+    {/if}
   </div>
 </section>

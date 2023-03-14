@@ -51,13 +51,18 @@ h5 {
     font-size: 18px;
 }
 
+p {
+    font-size: 15px;
+}
+
 small {
     font-size: 12px;
 }
 
 body {
-    background-color: #fffbf6;
-    color: #27272a;
+    background-color: var(--nude);
+    transition: all 0.25s ease-in-out;
+    color: var(--dark);
 }
 
 @media (min-width: 768px) {
@@ -118,6 +123,18 @@ small {
     border: 2px solid var(--primary);
 }
 
+.btn-secondary {
+    font-weight: 600;
+    color: var(--dark);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    border: 2px solid var(--secondary);
+}
+
 .btn-dark {
     font-weight: 600;
     color: white;
@@ -141,6 +158,19 @@ small {
     background-color: var(--primary);
     border-radius: 0.25rem;
     border: 2px solid var(--primary);
+}
+
+.btn-secondary-small {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    border: 2px solid var(--secondary);
 }
 
 .btn-primary-outline {
